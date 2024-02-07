@@ -1,18 +1,18 @@
-package testCase;
+package pages;
 
-import utility.BaseDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import utilities.DriverClass;
+import utilities.Parent;
 import java.util.List;
 
 public class ElementsPage extends Parent {
-
+    
     public ElementsPage() {
-        PageFactory.initElements(BaseDriver.driver, this);
+        PageFactory.initElements(DriverClass.getDriver(), this);
     }
-
+    
     @FindBy(xpath = "//a[@class='ico-login']")
     private WebElement loginButton;
     @FindBy(css = "[id='Email']")
@@ -161,299 +161,299 @@ public class ElementsPage extends Parent {
     private WebElement regMessage;
     @FindBy(xpath = "//li[text()='The specified email already exists']")
     private WebElement regErrorMessage;
-
+    
     public WebElement getLoginButton() {
         return loginButton;
     }
-
+    
     public WebElement getDay() {
         return day;
     }
-
+    
     public WebElement getMonth() {
         return month;
     }
-
+    
     public WebElement getYear() {
         return year;
     }
-
+    
     public WebElement getLoginEmail() {
         return loginEmail;
     }
-
+    
     public WebElement getLoginPassword() {
         return loginPassword;
     }
-
+    
     public WebElement getLog_inButton() {
         return log_inButton;
     }
-
+    
     public WebElement getLoginErrorMsg() {
         return loginErrorMsg;
     }
-
+    
     public WebElement getLogout() {
         return logout;
     }
-
+    
     public WebElement getMyAccButton() {
         return myAccButton;
     }
-
+    
     public List<WebElement> getListheader() {
         return listheader;
     }
-
+    
     public List<WebElement> getSubtabs() {
         return subtabs;
     }
-
+    
     public WebElement getHeaderMenu() {
         return headerMenu;
     }
-
+    
     public WebElement getComputers() {
         return computers;
     }
-
+    
     public WebElement getDesktop() {
         return desktop;
     }
-
+    
     public WebElement getNotebooks() {
         return notebooks;
     }
-
+    
     public WebElement getSoftware() {
         return software;
     }
-
+    
     public WebElement getElectronics() {
         return electronics;
     }
-
+    
     public WebElement getCameraAndPhoto() {
         return cameraAndPhoto;
     }
-
+    
     public WebElement getCellPhone() {
         return cellPhone;
     }
-
+    
     public WebElement getOthers() {
         return others;
     }
-
+    
     public WebElement getApparel() {
         return apparel;
     }
-
+    
     public WebElement getShoes() {
         return shoes;
     }
-
+    
     public WebElement getClothing() {
         return clothing;
     }
-
+    
     public WebElement getAccessories() {
         return accessories;
     }
-
+    
     public WebElement getDigitalDownloads() {
         return digitalDownloads;
     }
-
+    
     public WebElement getBooks() {
         return books;
     }
-
+    
     public WebElement getJewelry() {
         return jewelry;
     }
-
+    
     public WebElement getGiftCards() {
         return giftCards;
     }
-
+    
     public WebElement getSearch() {
         return search;
     }
-
+    
     public List<WebElement> getProductTitle() {
         return productTitle;
     }
-
+    
     public WebElement getProductName() {
         return productName;
     }
-
+    
     public List<WebElement> getProductItems() {
         return productItems;
     }
-
+    
     public WebElement getChosenGiftCard() {
         return chosenGiftCard;
     }
-
+    
     public WebElement getRecipientName25() {
         return recipientName25;
     }
-
+    
     public WebElement getYourName25() {
         return yourName25;
     }
-
+    
     public WebElement getMessageField25() {
         return messageField25;
     }
-
+    
     public WebElement getRecipientEmail25() {
         return recipientEmail25;
     }
-
+    
     public WebElement getYourEmail25() {
         return yourEmail25;
     }
-
+    
     public WebElement getRecipientName50() {
         return recipientName50;
     }
-
+    
     public WebElement getYourName50() {
         return yourName50;
     }
-
+    
     public WebElement getMessageField50() {
         return messageField50;
     }
-
+    
     public WebElement getRecipientName100() {
         return recipientName100;
     }
-
+    
     public WebElement getYourName100() {
         return yourName100;
     }
-
+    
     public WebElement getMessageField100() {
         return messageField100;
     }
-
+    
     public WebElement getAddToCart25() {
         return addToCart25;
     }
-
+    
     public WebElement getAddToCart50() {
         return addToCart50;
     }
-
+    
     public WebElement getAddToCart100() {
         return addToCart100;
     }
-
+    
     public WebElement getMsg() {
         return msg;
     }
-
+    
     public WebElement getGiftCardsLink() {
         return giftCardsLink;
     }
-
+    
     public WebElement getAddToCardsLink() {
         return addToCardsLink;
     }
-
+    
     public WebElement getWarningMessage() {
         return warningMessage;
     }
-
+    
     public WebElement getComputerS() {
         return computerS;
     }
-
+    
     public WebElement getDesktopS() {
         return desktopS;
     }
-
+    
     public WebElement getBuildOwnComp() {
         return buildOwnComp;
     }
-
+    
     public List<WebElement> getRamSelectContents() {
         return ramSelectContents;
     }
-
+    
     public List<WebElement> getHddButtonS() {
         return hddButtonS;
     }
-
+    
     public WebElement getBYOC_addToCardButton() {
         return BYOC_addToCardButton;
     }
-
+    
     public WebElement getChckShopCard() {
         return chckShopCard;
     }
-
+    
     public WebElement getSearchStore() {
         return searchStore;
     }
-
+    
     public WebElement getSearchButton() {
         return searchButton;
     }
-
+    
     public WebElement getProduct() {
         return product;
     }
-
+    
     public WebElement getRegister() {
         return register;
     }
-
+    
     public WebElement getGender() {
         return gender;
     }
-
+    
     public WebElement getFirstname() {
         return firstname;
     }
-
+    
     public WebElement getLastname() {
         return lastname;
     }
-
+    
     public WebElement getEmail() {
         return email;
     }
-
+    
     public WebElement getCompany() {
         return company;
     }
-
+    
     public WebElement getPassword() {
         return password;
     }
-
+    
     public WebElement getConfirmPassword() {
         return confirmPassword;
     }
-
+    
     public WebElement getButton() {
         return Button;
     }
-
+    
     public WebElement getContine() {
         return contine;
     }
-
+    
     public WebElement getRegMessage() {
         return regMessage;
     }
-
+    
     public WebElement getRegErrorMessage() {
         return regErrorMessage;
     }

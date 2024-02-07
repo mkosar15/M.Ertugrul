@@ -1,6 +1,5 @@
-package testCase;
+package utilities;
 
-import utility.BaseDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -8,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import pages.ElementsPage;
 
 import java.time.Duration;
 import java.util.Random;
@@ -16,7 +16,7 @@ public class Parent {
     static WebDriverWait wait;
 
     public Parent() {
-        wait = new WebDriverWait(BaseDriver.driver, Duration.ofSeconds(15));
+        wait = new WebDriverWait(DriverClass.getDriver(), Duration.ofSeconds(15));
     }
 
     public void sendKeysFunction(WebElement element, String value) {
@@ -63,7 +63,7 @@ public class Parent {
     }
 
     public void hoverFunction(WebElement element) {
-        Actions actions = new Actions(BaseDriver.driver);
+        Actions actions = new Actions(DriverClass.getDriver());
         Action action = actions.moveToElement(element).build();
         action.perform();
     }
